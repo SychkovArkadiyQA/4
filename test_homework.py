@@ -91,9 +91,7 @@ def test_dicts():
     second = [1, 2, 3, 4, 5]
     # TODO создайте словарь
 
-    d = {}
-    for i in range(len(first)):
-        d[second[i]] = first[i]
+    d = dict(zip(first, second))
     print(d)
 
     assert isinstance(d, dict)
